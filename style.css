@@ -2,17 +2,25 @@ body {
     background-repeat:repeat-x;
     background-size: 100%;
     background-image: url(images/DACCbuilding.jpg);
-    font-family: Arial;
+    font-family: 'Arial', monospace;
     color: white;
     margin: 0;
     padding: 0;
+  }
+  .verticalLine {
+    border:  solid #000000;
+    border-radius:100px ;
+    border-width: 2px;
+    height: 100px;
+    position: absolute;
+    left: 190px;
   }
   #nav {
     list-style-type: none;
     margin: 9px;
     padding: 0;
     overflow: hidden;
-    background-color: #ffffff;
+    background-color: #575757
   }
   #navli {
     float: left;
@@ -21,19 +29,24 @@ body {
   #navli a {
     font-size:25px;
     display: block;
-    color: rgb(27, 27, 27);
+    color: rgb(255, 255, 255);
     text-align: center;
-    padding: 14px 16px;
-    font-weight:bolder;
+    padding: 24px 25px;
     text-decoration: none;
   }
   #navli a:hover {
-    background-color: #e7e7e7;
+    color: #929292;
   }
   .navbar{
-    position:fixed;
-    top:0;
-    left:0;
+    position: fixed;
     width:100%;
-    background-color: #ffffff;
+    background-color: #575757;
+  }
+  #logo{
+    width: 120px;
+    height: 60px;
+    float: left;
+    display:inline;
+    text-align: center;
+    margin: 10px;
   }
