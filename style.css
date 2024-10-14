@@ -33,9 +33,12 @@ body {
     text-align: center;
     padding: 24px 25px;
     text-decoration: none;
+    transition: text-decoration 500ms;
+    text-decoration: none;
   }
   #navli a:hover {
     color: #929292;
+    text-decoration: underline;
   }
   .navbar{
     position: fixed;
