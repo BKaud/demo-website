@@ -29,7 +29,7 @@ body {
     flex-grow: 1; /* Take up remaining space in the middle */
     display: flex;
     flex-direction: column;
-    justify-content: center;
+
     align-items: center;
     position: relative;
 }
@@ -49,21 +49,22 @@ body {
 }
 
 #nav {
-    list-style-type: none;
-    margin: 9px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    float: left;
+    margin: 0;
     padding: 0;
-    overflow: hidden;
     background-color: #272727;
 }
 
 #navli {
-    float: left;
     display: inline;
+
 }
 
 #navli a {
     font-size: 25px;
-    display: block;
     color: rgb(255, 255, 255);
     text-align: center;
     padding: 24px 25px;
@@ -85,4 +86,18 @@ body {
 }
 #logo2{
     filter:brightness(0.2);
+    position: absolute;
+}
+@media (max-width: 728px) {
+    #navli a {
+        font-size: 20px;
+        padding: 15px 20px;
+        float: left;
+    }
+
+    #logo {
+        width: 80%;
+        max-width: 120px;
+        height: auto;
+    }
 }
