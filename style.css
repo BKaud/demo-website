@@ -29,14 +29,14 @@ body {
     flex-grow: 1; /* Take up remaining space in the middle */
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     position: relative;
 }
 
 .center-image {
     max-width: 100%; /* Make sure the image fits within the content */
     height:auto;
+    justify-content: center;
+    align-items: center;
 }
 
 .navbar {
@@ -83,8 +83,9 @@ body {
     text-align: center;
     margin: 10px;
 }
-#logo2{
+#backg{
     filter:brightness(0.2);
+<<<<<<< HEAD
 }
 
 /* CSS For About.HTML*/
@@ -188,4 +189,15 @@ body {
     left:375px;
     width:1200px;
     height:750px;
+=======
+    position: absolute;
+    top: 0px;
+}
+#logoonback{
+    position:relative;
+    left:50px;
+    top: 50px;
+    height: auto;
+    width: 510px;
+>>>>>>> main
 }
