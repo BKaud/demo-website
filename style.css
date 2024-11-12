@@ -75,7 +75,18 @@ body {
 #navli a:hover {
     color: #979797;
 }
-
+#slogan{
+    color: #ffffff;
+    font-size: 150px;
+    position: absolute;
+    left: 50px;
+    top: 500px;
+    text-align: center;
+    opacity: 0.5;
+    border-style:solid ;
+    border: #111111;
+    border-width:10px;
+}
 #logo {
     width: 120px;
     height: 60px;
