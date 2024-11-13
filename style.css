@@ -16,6 +16,7 @@ body {
     width: 100px; /* Adjust the width of the columns */
     background-color: #333; /* The different color for the columns */
     height: 4000px;
+    top: 1000px;
 }
 
 .left-column {
@@ -156,6 +157,7 @@ body {
 }
 #cloth2{
     width: 330px;
+    transition: margin 0.2s;
 }
 .newshirt-container {
     position: absolute;
@@ -176,10 +178,15 @@ body {
     align-items: center;
     margin: 0; /* Centered within the row */
 }
+
+#cloth2:hover{
+    margin-top:10px;
+}
 #scollbox2{
     width: 1720px;
     height: 780px;
 }
+
 .pplpics-container {
     position: absolute;
     display: flex;
@@ -192,6 +199,50 @@ body {
     width: 426px;
     height: 780px;
     object-fit: cover; /* Ensures images maintain their aspect ratio */
+}
+#box1{
+    position: absolute;
+    height: 80px;
+    width: 150px;
+    top: 1940px;
+    left: 490px;
+    background-color: #1a1a1a;
+    z-index: 1; 
+    animation: bounce1 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes bounce1 {
+    50%{top: 1920px;}
+    100%{top: 1940px;}
+}
+#textinbox{
+    font-size: 80px;
+}
+#boxtext{
+    position: absolute;
+    height: 195px;
+    width: 694px;
+    top: 1962.5px;
+    left: 513px;
+    background-color: #272727;
+    z-index: 2;
+    text-align: center;
+    
+}
+#box2{
+    position: absolute;
+    height: 80px;
+    width: 150px;
+    top: 2100px;
+    left: 1080px;
+    background-color: #1a1a1a;
+    z-index: 1;
+    animation: bounce2 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes bounce2 {
+    50%{top: 2120px;}
+    100%{top: 2100px;} 
 }
 /* CSS For About.HTML*/
 
