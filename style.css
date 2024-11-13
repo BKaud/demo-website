@@ -9,7 +9,7 @@ body {
 .container {
     display: flex;
     flex-direction: row;
-    height: 100vh;  /*Full height of the viewport */
+    height: 4000px;  /*Full height of the viewport */
 }
 
 .side-column {
@@ -26,6 +26,7 @@ body {
 }
 
 .main-content {
+    top: 100px;
     flex-grow: 1; /* Take up remaining space in the middle */
     display: flex;
     flex-direction: column;
@@ -96,84 +97,19 @@ body {
     height: auto;
     width: 510px;
 }
+#Contactheader{
+    left:50px;
+    width:100%;
+    background-color: #2e2d2d;
+    text-align: center;
+}
 .Supportheader{
-    font-size: 105px;
-    text-align: center;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 50px;
+    left: 50px;
+}
+#FAQ{
 
-}
-.SupportText{
-    text-align: center;
-    font-size: 60px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-.FAQ{
-    margin: 5%;
-    text-align: center;
-    font-size: 85px;
-    font: bold;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-.quest1{
-    font-size: 50px;
-    text-align:left;
-    Margin: 9%;
-    
-}
-hr {
-    display: block;
-    height: 3px;
-    border: 0;
-    border-top: 8px solid #333;
-    margin: 1em 0;
-    padding: 0;
-  }
-  .ans1{
-    font-size: 50px;
-    text-align:right;
-    Margin: 9%;
-}
-.FAQ-Container{
-    display: flex;
-    flex-wrap: row;
-}
-.ans2{
-    font-size: 50px;
-    text-align:right;
-    margin-right: 419px;
-    margin-left: auto;
-    
-}
-.quest2{
-    font-size: 50px;
-    text-align:right;
-    margin-right: 419px;
-    margin-left: auto;
-}
-.FAQ-Container2{
-    display: flex;
-    flex-wrap: row;
-}
-.ans3{
-    font-size: 50px;
-    text-align:right;
-    margin-right: 519px;
-    margin-left: auto;
-    float: left;
-    right: auto;
-    
-}
-.quest3{
-    font-size: 50px;
-    text-align:left;
-    margin-right: 2800px;
-    margin-left: auto;
-    left: auto;
     position: absolute;
+    left: 100px;
+    top: 250px;
 }
-.FAQ-Container3{
-    display:flexbox;
-    flex-wrap: row;
-}
-html { overflow-y: scroll; }
-body { position; }
