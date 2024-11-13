@@ -1,46 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <div class="container">
-            <div class="side-column left-column"></div> 
-            <div class="main-content">
-                <div id="Contactheader">
-                    <h1 class= "Supportheader">Contact Us!</h1>
-                    <p class="SupportText"><strong>Before making a support request please read <br>through the FAQ to see if your question it answered there </strong></p>
-                    <br>
-                </div>
-                <div id="FAQ">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="side-column left-column"></div> 
+        <div class="main-content">
+            <header id="Contactheader">
+                <h1 class="Supportheader">Contact Us!</h1>
+                <p class="SupportText"><strong>Before making a support request, please read through the FAQ to see if your question is answered there.</strong></p>
+            </header>
+            
+            <!-- Flex container for FAQ and Form -->
+            <div class="faq-form-container">
+                <section id="FAQ">
                     <h2 class="FAQ">Frequently Asked Questions:</h2>
+                    <br>
                     <div class="FAQ-Container">
-                        <p class="quest1">&nbsp;&nbsp;&nbsp;&nbsp;Q:How long does it take for items to be delivered?</p>
-                        <p class="ans1">A:It takes about 3-5 days for items to be delivered.</p>
+                        <p class="quest">Q: How long does it take for items to be delivered?</p>
+                        <br>
+                        <p class="ans">A: It takes about 7-10 business days for items to be delivered.</p>
+                        <br>
                     </div>
                     <div class="FAQ-Container2">
-                        <p class="quest2">&nbsp;&nbsp;&nbsp;&nbsp;Q:Can I cancel my order?</p>
-                        <p class="ans2">A:You are able to cancel for up to 5 days after ordering.</p>
+                        <p class="quest">Q: Can I cancel my order?</p>
+                        <br>
+                        <p class="ans">A: You can cancel your order up to 3 days after ordering.</p>
+                        <br>
                     </div>
                     <div class="FAQ-Container3">
-                        <p class="quest3">&nbsp;&nbsp;&nbsp;&nbsp;Q:Can I return a product?</p>
-                        <p class="ans3">A:You are able to return a product for 30 days after receiving it.</p>
+                        <p class="quest">Q: Can I return a product?</p>
+                        <br>
+                        <p class="ans">A: You can return a product within 30 days of receiving it. All tags must remain on the item though</p>
+                        <br>
                     </div>
-                </div>    
-                <div class="navbar">
-                    <ul id="nav">
-                        <li id="navli"><img id="logo" src="images/logo.png" height="35px"></li>
-                        <li id="navli"><a href="index.html">Home</a></li>
-                        <li id="navli"><a href="about.html">About</a></li>
-                        <li id="navli"><a href="products.html">Products</a></li>
-                        <li id="navli"><a href="support.html">Support</a></li> 
-                    </ul>
-                </div>
+                </section>
+
+                <section class="formcontainer">
+                    <form action="action_page.php">
+                        <label for="name">Name on Order</label>
+                        <input type="text" id="name" name="name" placeholder="Your name..">
+
+                        <label for="ordnum">Order Number</label>
+                        <input type="text" id="ordnum" name="ordernumber" placeholder="Order Number..">
+
+                        <label for="issue">Issue</label>
+                        <select id="issue" name="issue">
+                            <option value="ordgone">Order has not arrived</option>
+                            <option value="probprod">Problem with product</option>
+                            <option value="comp">Complaint</option>
+                            <option value="other">Other</option>
+                        </select>
+
+                        <label for="subject">Subject</label>
+                        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+                        <input type="submit" value="Submit">
+                    </form>
+                </section>
             </div>
-            <div class="side-column right-column"></div>  
+
+            <nav class="navbar">
+                <ul id="nav">
+                    <li id="navli"><img id="logo" src="images/logo.png" alt="Company Logo"></li>
+                    <li id="navli"><a href="index.html">Home</a></li>
+                    <li id="navli"><a href="about.html">About</a></li>
+                    <li id="navli"><a href="products.html">Products</a></li>
+                    <li id="navli"><a href="support.html">Support</a></li> 
+                </ul>
+            </nav>
         </div>
-    </body>
+        <div class="side-column right-column"></div>  
+    </div>
+</body>
 </html>
