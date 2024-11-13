@@ -202,6 +202,70 @@ body {
  
 /*CSS for product Page*/
 
+.shirt1{
+    position: absolute;
+    top: 300px;
+    left:355px;
+    width:250px;
+    height:250px;
+}
+.shirt2{
+    position: absolute;
+    top: 300px;
+    left:755px;
+    width:250px;
+    height:250px;
+}
+.shirt3{
+    position: absolute;
+    top: 300px;
+    left:1155px;
+    width:250px;
+    height:250px;
+}
+.shirt4{
+    position: absolute;
+    top: 800px;
+    left:355px;
+    width:250px;
+    height:250px;
+}
+.shirt5{
+    position: absolute;
+    top: 800px;
+    left:755px;
+    width:250px;
+    height:250px;
+}
+.shirt6{
+    position: absolute;
+    top: 800px;
+    left:1155px;
+    width:250px;
+    height:250px;
+}
+.shirt7{
+    position: absolute;
+    top: 1300px;
+    left:355px;
+    width:250px;
+    height:250px;
+}
+.shirt8{
+    position: absolute;
+    top: 1300px;
+    left:755px;
+    width:250px;
+    height:250px;
+}
+.shirt9{
+    position: absolute;
+    top: 1300px;
+    left:1155px;
+    width:250px;
+    height:250px;
+}
+
 .verticalLine {
     border-left: 2px solid #ffffff;
     margin-right: 15px;
