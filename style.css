@@ -85,7 +85,63 @@ body {
 #navli a:hover {
     color: #979797;
 }
-
+/*Index stuff -------------------------------------------------------------------------*/
+@media (max-width: 768px) {
+    .series-images-container {
+        flex-direction: column;
+    }
+    #midbox {
+        position: static; /* Stack below images on smaller screens */
+        transform: none;
+        width: 100%; /* Full width for mobile */
+        margin-top: 20px;
+    }
+}
+#midbox {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    position: absolute; /* Absolute to center it over the images */
+    top: 50%; /* Vertical centering */
+    left: 50%; /* Horizontal centering */
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    width: 80%; /* Responsive width */
+    max-width: 400px; /* Maximum width */
+    opacity: 1;
+}
+#smallbox1 {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    position: absolute; /* Absolute to center it over the images */
+    top: 45%; /* Vertical centering */
+    left: 38%; /* Horizontal centering */
+    transform: translate(-50%, -50%);
+    z-index: 0;
+    width: 10%; /* Responsive width */
+    max-width: 200px; /* Maximum width */
+    opacity: 0.9;
+}
+#smallbox2 {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    position: absolute; /* Absolute to center it over the images */
+    top: 55%; /* Vertical centering */
+    left: 62%; /* Horizontal centering */
+    transform: translate(-50%, -50%);
+    z-index: 0;
+    width: 10%; /* Responsive width */
+    max-width: 200px; /* Maximum width */
+    opacity: 0.9;
+}
 /* Slogan */
 #slogan {
     color: #ffffff;
@@ -209,15 +265,17 @@ body {
 }
 
 .pplpics {
-    width: 25%; /* Make images take up 25% of the container width */
-    margin: 0; /* Remove any space between the images */
+    width: 25%;
+    height: auto;
+    max-width: 700px; /* Responsive max width */
 }
 /* Flex container for images */
 .series-images-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin-top: -50px; /* Adjust this value to position the text */
+    position: relative; /* So midbox can be centered absolutely */
 }
 
 #box1, #box2 {

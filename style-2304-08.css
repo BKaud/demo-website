@@ -1,0 +1,115 @@
+body {
+    font-family: 'Arial', monospace;
+    color: #ffffff;
+    background-color: #464646;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    height: 4000px;  /*Full height of the viewport */
+}
+
+.side-column {
+    width: 100px; /* Adjust the width of the columns */
+    background-color: #333; /* The different color for the columns */
+}
+
+.left-column {
+    /* Left column specific styles if needed */
+}
+
+.right-column {
+    /* Right column specific styles if needed */
+}
+
+.main-content {
+    top: 100px;
+    flex-grow: 1; /* Take up remaining space in the middle */
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.center-image {
+    max-width: 100%; /* Make sure the image fits within the content */
+    height:auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #272727;
+    z-index: 1000; /* Ensures it stays on top of other content */
+    height: 100px;
+}
+
+#nav {
+    list-style-type: none;
+    margin: 9px;
+    padding: 0;
+    overflow: hidden;
+    background-color: #272727;
+}
+
+#navli {
+    float: left;
+    display: inline;
+}
+
+#navli a {
+    font-size: 25px;
+    display: block;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 24px 25px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+#navli a:hover {
+    color: #979797;
+}
+
+#logo {
+    width: 120px;
+    height: 60px;
+    float: left;
+    display: inline;
+    text-align: center;
+    margin: 10px;
+}
+#backg{
+    filter:brightness(0.2);
+    position: absolute;
+    top: 0px;
+}
+#logoonback{
+    position:relative;
+    left:50px;
+    top: 50px;
+    height: auto;
+    width: 510px;
+}
+#Contactheader{
+    left:50px;
+    width:100%;
+    background-color: #2e2d2d;
+    text-align: center;
+}
+.Supportheader{
+    font-size: 50px;
+    left: 50px;
+}
+#FAQ{
+
+    position: absolute;
+    left: 100px;
+    top: 250px;
+}
