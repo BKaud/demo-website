@@ -86,6 +86,28 @@ body {
     color: #979797;
 }
 /*Index stuff -------------------------------------------------------------------------*/
+#wawa{
+    text-align: center;
+    font-size: 150px;
+}
+#whatabout{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    position: relative; /* So midbox can be centered absolutely */
+}
+#abttext{
+    width: 50%;
+    height: 980px;
+    max-width: 860px; /* Responsive max width */
+    background-color: #1a1a1a;
+}
+#pictures{
+    width: 25%;
+    height: 980px;
+    max-width: 860px; /* Responsive max width */
+    background-color: #04AA6D;
+}
 @media (max-width: 768px) {
     .series-images-container {
         flex-direction: column;
@@ -251,17 +273,6 @@ body {
     width: 80%;
     height: auto;
     transition: margin 0.2s;
-}
-
-/* People Pics Container */
-.pplpics-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
-    padding: 20px;
-    width: 25%; /* Make images take up 25% of the container width */
-    margin: 0; /* Remove any space between the images */
 }
 
 .pplpics {
