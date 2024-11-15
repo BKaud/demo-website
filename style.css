@@ -4,10 +4,12 @@ body {
     color: #ffffff;
     margin: 0;
     padding: 0;
-    background-color: #272727;
+    background-color: #111111;
     overflow-x: hidden;
 }
-
+a{
+    color: #fff;
+}
 .container {
     display: flex;
     flex-direction: row;
@@ -17,11 +19,31 @@ body {
 .side-column {
     width: 100px;
     background-color: #333;
+    min-height: 100vh; /* Ensures container fills the viewport height */
     position: fixed;
     top: 0;
     bottom: 0;
     height: 100vh; /* Full viewport height */
     z-index: 1; /* Ensure it appears behind other content */
+}
+
+.main-content {
+    padding-top: 80px; /* Adjusted for navbar height */
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    flex-grow: 1;
+    margin-left: 100px; /* Offset for the left side-column */
+    margin-right: 100px; /* Offset for the right side-column */
+    padding-top: 0px; /* Offset for fixed navbar */
+}
+#backg{
+    filter: grayscale(100);
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures video covers entire container */
 }
 
 .left-column {
@@ -30,17 +52,6 @@ body {
 
 .right-column {
     right: 0;
-}
-
-.main-content {
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    margin-left: 100px; /* Offset for the left side-column */
-    margin-right: 100px; /* Offset for the right side-column */
-    padding-top: 80px; /* Offset for fixed navbar */
 }
 
 /* Image Responsiveness */
@@ -87,7 +98,155 @@ body {
     color: #979797;
 }
 /*Index stuff -------------------------------------------------------------------------*/
+#scrollbox4 {
+    width: 100%;
+    display: flex; /* Flexbox to arrange the boxes in a row */
+    justify-content: space-between; /* Distribute space equally between the boxes */
+    gap: 20px; /* Optional gap between boxes */
+    padding: 50px 0; /* Adjust padding as needed */
+    box-sizing: border-box; /* Prevent padding from affecting layout */
+    background-color: #272727;
+}
+
+#scrollbox4-box1 {
+    width: 50%; /* Width of each box */
+    height: 800px; /* Height is longer than width */
+    background-color: #1a1a1a; /* Background color of outer box */
+    border-radius: 15px; /* Rounded corners (optional) */
+    display: flex; /* Flexbox to center content inside the box */
+    flex-direction: column; /* Arrange the children (h2 and inner box) vertically */
+    justify-content:space-between; /* Space the content inside vertically */
+    align-items: center;
+    color: white; /* Text color */
+    margin: 40px; /* Padding inside each box */
+    box-sizing: border-box;
+}
+#scrollbox4-box2 {
+    width: 50%; /* Width of each box */
+    height: 800px; /* Height is longer than width */
+    background-color: #1a1a1a; /* Background color of outer box */
+    border-radius: 15px; /* Rounded corners (optional) */
+    display: flex; /* Flexbox to center content inside the box */
+    flex-direction: column; /* Arrange the children (h2 and inner box) vertically */
+    justify-content:end; /* Space the content inside vertically */
+    align-items: end;
+    color: white; /* Text color */
+    margin: 40px; /* Padding inside each box */
+    box-sizing: border-box;
+}
+
+.scrollbox4-box h2 {
+    font-size: 24px;
+    margin: 0;
+}
+
+#inner-box2 {
+    width: 80%; /* Width of the inner box relative to the outer box */
+    height: 15%; /* Height of the inner box */
+    background-color: #333333; /* Darker color for inner box */
+    border-radius: 10px; /* Rounded corners for the inner box */
+    display: flex; /* Flexbox to center content inside the inner box */
+    justify-content: center;
+    align-items: center;
+    color: #fff; /* Text color for the inner box */
+    margin:50px;
+}
+#inner-box1 {
+    width: 80%; /* Width of the inner box relative to the outer box */
+    height: 80%; /* Height of the inner box */
+    background-image: url(images/skating-2304-08.png); /* Darker color for inner box */
+    border-radius: 10px; /* Rounded corners for the inner box */
+    display: flex; /* Flexbox to center content inside the inner box */
+    justify-content: center;
+    align-items: center;
+    color: #fff; /* Text color for the inner box */
+    margin-left:50px;
+    margin-right:50px;
+    margin-top:50px;
+}
+#pic-box2 {
+    width: 80%; /* Width of the inner box relative to the outer box */
+    height: 80%; /* Height of the inner box */
+    background-image: url(images/city.png); /* Darker color for inner box */
+    border-radius: 10px; /* Rounded corners for the inner box */
+    display: flex; /* Flexbox to center content inside the inner box */
+    justify-content: center;
+    align-items: center;
+    color: #fff; /* Text color for the inner box */
+    margin-left:50px;
+    margin-right:50px;
+    margin-bottom:50px;
+}
+#pic-box1 {
+    width: 80%; /* Width of the inner box relative to the outer box */
+    height: 15%; /* Height of the inner box */
+    background-color: #333333; /* Darker color for inner box */
+    border-radius: 10px; /* Rounded corners for the inner box */
+    display: flex; /* Flexbox to center content inside the inner box */
+    justify-content: center;
+    align-items: center;
+    color: #fff; /* Text color for the inner box */
+    margin:50px;
+}
+#inner-inner-box1 {
+    width: 70%; /* Width of the innermost box relative to the inner box */
+    height: 30%; /* Height of the innermost box */
+    background-color: #1a1a1a; /* Darker color for inner-inner box */
+    border-radius: 10px; /* Rounded corners */
+    display: flex; /* Flexbox to center content inside the innermost box */
+    justify-content: center;
+    align-items: center;
+    color: #fff; /* Text color */
+}
+#inner-inner-box2 {
+    width: 70%; /* Width of the innermost box relative to the inner box */
+    height: 30%; /* Height of the innermost box */
+    background-color: #1a1a1a; /* Darker color for inner-inner box */
+    border-radius: 10px; /* Rounded corners */
+    display: flex; /* Flexbox to center content inside the innermost box */
+    justify-content: center;
+    align-items: center;
+    color: #fff; /* Text color */
+}
+#supporttxt{
+    font-size: 7vh;
+    text-decoration: underline;
+}
+.circle-container {
+    display: flex;
+    flex-direction: column;
+    gap: 210px; /* Space between the circles */
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Take up the full width of the inner box */
+    height: 50%; /* Set height to allow space for all circles */
+}
+.circle img {
+    width: 100%; /* Make image fill the circle */
+    height: 100%; /* Make image fill the circle */
+    object-fit: cover; /* Ensure the image is cropped and covers the entire circle */
+}
+.circle {
+    width: 130px; /* Width of the circle */
+    height: 140px; /* Height of the circle */
+    background-color: #fff; /* Tomato color for the circles */
+    border-radius: 50%; /* Make the div round */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Hide any part of the image that goes beyond the circle */
+    margin: -90px;
+    transition: width,height 0.3s;
+}
+.circle:hover{
+    width:150px;
+    height: 160px;
+}
 /* Scrollbox3 Styles */
+#seperate{
+    background-color: #111111;
+    width: 100%;
+}
 #scrollbox3 {
     width: 100%;
     display: flex;
@@ -105,7 +264,7 @@ body {
     align-items: center;
     width: 100%;
     gap: 20px; /* Space between text and image */
-    margin-top: 20px;
+    z-index: -1;
 }
 
 /* Text Section */
@@ -123,10 +282,12 @@ body {
 
 /* Title Text */
 #wawa {
-    font-size: 100px; /* Adjusted size */
-    line-height: 120px;
-    margin-top: 20px;
+    font-size: 15vh; /* Adjusted size */
+    line-height: 200px;
+    margin-top: 90px;
     word-wrap: break-word;
+    background-color: #111111;
+    width:75%;
 }
 
 /* Image Section */
@@ -137,9 +298,28 @@ body {
     text-align: center;
     position: relative; /* To keep the image's position consistent */
 }
+#overlay-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #111111;
+    opacity: 0.95;
+    padding: 20px;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 10px;
+    width: 80%; /* Adjust as needed */
+    max-width: 600px; /* Max width to keep it responsive */
+}
 
+#overlay-box h2 {
+    margin: 0;
+    font-size: 100px; /* Adjust font size as needed */
+    text-decoration: underline;
+}
 #pic {
-    width: 100%;
+    width: 205%;
     height: 100%;
     object-fit: cover; /* Ensures the image covers the div area without stretching */
     animation: picmove 40s linear infinite;
@@ -210,10 +390,10 @@ body {
 
 @keyframes picmove {
     0% {
-        transform: translateX(-100%); /* Initial position */
+        transform: translateX(-1%); /* Initial position */
     }
     100% {
-        transform: translateX(-50%); /* Moves to the left, adjust as needed */
+        transform: translateX(-51%); /* Moves to the left, adjust as needed */
     }
 }
 @media (max-width: 768px) {
@@ -256,6 +436,7 @@ body {
     width: 10%; /* Responsive width */
     max-width: 200px; /* Maximum width */
     opacity: 0.9;
+    animation: smallbox 4s infinite;
 }
 #smallbox2 {
     background-color: #1a1a1a;
@@ -271,20 +452,31 @@ body {
     width: 10%; /* Responsive width */
     max-width: 200px; /* Maximum width */
     opacity: 0.9;
+    animation: smallbox 4s infinite;
+}
+@keyframes smallbox {
+    0% {width: 10% ;height: 10%;}
+    50%{width: 9% ;height: 9%;}
+    100% {width: 10% ;height: 10%;}
 }
 /* Slogan */
 #slogan {
     color: #ffffff;
     font-size: 150px;
     position: absolute;
-    left: 50px;
+    left: 500px;
     top: 500px;
     text-align: center;
     opacity: 0.5;
     border: 10px solid #111111;
     padding: 20px;
 }
-
+#topcontent{
+    position: relative;
+    width: 100%;
+    height: 70vh; /* Full viewport height */
+    overflow: hidden;
+}
 /* Logo */
 #logo {
     width: 120px;
@@ -293,21 +485,39 @@ body {
 }
 
 #logo2 {
-    height: 240px;
-    width: 500px;
     position: absolute;
-    top: 150px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 800px; /* Increased from 600px to 800px */
+    padding: 10px;
     text-align: center;
-    opacity: 0.4;
+    z-index: 1; /* Ensure logo stays on top of video */
 }
 
 #logoin {
-    position: absolute;
-    height: 240px;
-    width: 600px;
-    left: 50px;
+    width: 100%;
+    height: auto;
+    max-height: 400px; /* Increased from 400px to 500px */
+}
+@media (max-width: 768px) {
+    #logo2 {
+        max-width: 500px; /* Increased for medium screens */
+    }
+    #logoin {
+        max-height: 400px; /* Increased for medium screens */
+    }
 }
 
+@media (max-width: 480px) {
+    #logo2 {
+        max-width: 400px; /* Increased for smaller screens */
+    }
+    #logoin {
+        max-height: 300px; /* Increased for smaller screens */
+    }
+}
 /* Product Promo */
 #clothingpromo {
     opacity: 0;
@@ -569,35 +779,7 @@ body {
 }
 
 
-body {
-    font-family: 'Arial', monospace;
-    color: #ffffff;
-    margin: 0;
-    padding: 0;
-    background-color: #272727;
-}
 
-.container {
-    display: flex;
-    flex-direction: row;
-    min-height: 100vh; /* Ensures container fills the viewport height */
-}
-
-.side-column {
-    width: 100px;
-    background-color: #333;
-    min-height: 100vh; /* Ensures container fills the viewport height */
-
-}
-
-.main-content {
-    padding-top: 100px; /* Adjusted for navbar height */
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-}
 
 /* New Flex container for FAQ and Form */
 .faq-form-container {
