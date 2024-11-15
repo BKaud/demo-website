@@ -7,6 +7,14 @@ body {
     background-color: #111111;
     overflow-x: hidden;
 }
+#body2 {
+    font-family: 'Arial', monospace;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    background-color: #111111;
+    overflow-x: hidden;
+}
 a{
     color: #fff;
 }
@@ -689,67 +697,103 @@ a{
 /* CSS For About.HTML*/
 
 .about1{
+    border-radius: 15px;
     position: absolute;
-    top: 100px;
-    left:200px;
-    font-size:350%;
-    
+    top: 200px;
+    font-size:300%;
+    background-color:#272727;
+    margin:6%;
+    padding: 5px;
+    text-align: center;
 }
 .about2{
+    border-radius: 15px;
     position: absolute;
-    top: 200px  ;
-    left:100px;
-    font-size:250%;
-    margin:5%;
+    top: 150px;
+    left:200px;
+    font-size:150%;
+    background-color:#272727;
+    padding: 5px;
+    text-align: center
 }
 .about3{
+    border-radius: 15px;
     position: absolute;
     top: 600px  ;
-    left:1100px;
+    left:1000px;
     font-size:350%;
     margin:5%;
+    background-color:#272727;
+    background-color:#272727;
+    padding: 5px;
+    text-align: center
 }
 .about4{
+    border-radius: 15px;
     position: absolute;
+    width: 700px;
+    height: 250px;
     top: 800px  ;
     left:1000px;
     font-size:230%;
+    background-color:#272727;
+    padding: 5px;
+    text-align: center
 }
 .about5{
+    border-radius: 15px;
     position: absolute;
     top: 1350px;
     left:920px;
     font-size:500%;
+    background-color:#272727;
+    padding: 5px;
+    text-align: center
     
 }
 .about6{
+    border-radius: 15px;
     position: absolute;
     top: 3350px;
     left:570px;
     font-size:500%;
+    background-color:#272727;
+    padding: 5px;
+    text-align: center
 }
 .about7{
+    border-radius: 15px;
     position: absolute;
     top: 2100px;
     left:100px;
     font-size:275%;
     margin:5%;
+    width: 1550px;
+    background-color:#272727;
+    padding: 5px;
+    text-align: center
 }
 .about8{
+    border-radius: 15px;
     position: absolute;
     top: 3500px;
     left:700px;
     font-size:350%; 
+    background: color #272727;;
+    padding: 5px;
+    text-align: center
 }
 .aboutimg1{
+    border-radius: 15px;
     position: absolute;
     top: 600px  ;
-    left:100px;
+    left:40px;
     margin:5%;
     width:750px;
     height:550px;
 }
 .aboutimg2{
+    border-radius: 15px;
     position: absolute;
     top: 1500px ;
     left:100px;
@@ -758,6 +802,7 @@ a{
     height:550px;
 }
 .aboutimg3{
+    border-radius: 15px;
     position: absolute;
     top: 1500px ;
     left:500px;
@@ -766,6 +811,7 @@ a{
     height:550px;
 }
 .aboutimg4{
+    border-radius: 15px;
     position: absolute;
     top: 1500px ;
     left:900px;
@@ -774,6 +820,7 @@ a{
     height:550px;
 }
 .aboutimg5{
+    border-radius: 15px;
     position: absolute;
     top: 1500px ;
     left:1300px;
@@ -782,13 +829,13 @@ a{
     height:550px;
 }
 .aboutimg6{
+    border-radius: 15px;
     position: absolute;
     top: 2600px ;
     left:375px;
     width:1200px;
     height:750px;
 }
-
 
 
 
@@ -1058,13 +1105,6 @@ input[type=submit]:hover {
     height:750px;
 }
  
-.aboutimg6{
-    position: absolute;
-    top: 2600px ;
-    left:375px;
-    width:1200px;
-    height:750px;
-}
  
 .sele{
     margin-top:20px ;
