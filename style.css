@@ -16,6 +16,7 @@ body {
     overflow-x: hidden;
 }
 a{
+    z-index: 4;
     color: #fff;
 }
 .container {
@@ -257,10 +258,6 @@ a{
     margin: -90px;
     transition: width,height 0.3s;
 }
-.circle:hover{
-    width:150px;
-    height: 160px;
-}
 /* Scrollbox3 Styles */
 #seperate{
     background-color: #111111;
@@ -330,6 +327,7 @@ a{
     border-radius: 10px;
     width: 80%; /* Adjust as needed */
     max-width: 600px; /* Max width to keep it responsive */
+    z-index: 5;
 }
 
 #overlay-box h2 {
